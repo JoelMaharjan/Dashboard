@@ -1,0 +1,74 @@
+.user{
+    flex:4;
+    padding: 20px  ;
+}
+
+.userTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userCreate{
+    border-radius: 10px;
+    background-color: rgb(14, 83, 163);
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+.userContainer{
+    display: flex;
+    align-items: center;
+}
+.userShow{
+    flex: 1;
+    padding: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+.userUpdate{
+    flex: 2;
+    padding: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-left: 20px;
+}
+.userShowTitle{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.userName{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.userJob{
+    font-size: 14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #555;
+}
+.userDetailTitle{
+    margin:20px 0 0 0;
+}
+.userDetails{
+    display: flex;
+    align-items: center;
+    color: #555;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.userImg{
+    width: 300px;
+    border-radius: 6px;
+}
+
+.userShowBottom{
+    margin-top: 20px;
+}

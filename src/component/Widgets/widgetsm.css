@@ -1,0 +1,53 @@
+.widgetsm{
+    padding: 10px;
+    margin-right: 20px;
+    flex: 1;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.widgetTitle{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.widgetsmList{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+.widgetListItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.widgetImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.users{
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetName{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.widgetJob{
+    font-size: 15px;
+    color: #555
+}
+
+.viewWidget{
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: rgb(87, 205, 205);
+    cursor: pointer;
+}
