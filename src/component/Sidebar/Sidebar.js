@@ -1,4 +1,5 @@
 import {Home, Timeline, Badge, Message, MailOutline, Feedback, Person, BarChart, Report } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 import './sidebar.css'
 function Sidebar(){
     return(
@@ -7,27 +8,30 @@ function Sidebar(){
                 <div className="sidebarMenu">
                     <div className="sidebarTitle">Dashboard</div>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
-                            <Home className='sidebarIcon'/>
-                            Home
-                        </li>
-                        <li className="sidebarListItem">
-                            <Timeline className='sidebarIcon' />
-                            Analytics
-                        </li>
-                        <li className="sidebarListItem">
-                            <Badge className='sidebarIcon' />
-                            Employees
-                        </li>
+                        <Link to='/dashboard'>
+                            <li className="sidebarListItem active">
+                                <Home className='sidebarIcon'/>
+                                Home
+                            </li>
+                        </Link>
+                        <Link to = "/users">
+                            <li className="sidebarListItem">
+                                <Person className='sidebarIcon'/>
+                                Users
+                            </li>
+                        </Link>
+                        <Link to = "/newUser">
+                            <li className="sidebarListItem">
+                                <Timeline className='sidebarIcon' />
+                                New Users
+                            </li>
+                        </Link>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <div className="sidebarTitle">Quick Menu</div>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <Person className='sidebarIcon'/>
-                            Users
-                        </li>
+
                         <li className="sidebarListItem">
                             <BarChart className='sidebarIcon' />
                             Charts

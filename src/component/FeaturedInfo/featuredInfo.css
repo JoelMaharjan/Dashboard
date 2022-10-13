@@ -1,5 +1,4 @@
 .featuredInfo{
-    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -11,8 +10,7 @@
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;}
 
 .featuredTitle{
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 25px;
     color:rgb(0, 50, 50);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

@@ -1,8 +1,9 @@
 import './user.css'
 import { PermIdentity, Email, LocationOn, LocalPhone } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 const userData = {
-    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e8/Chris_Hemsworth_by_Gage_Skidmore_2_%28cropped%29.jpg',
+    image: '/image/user.jpg',
     username: 'Joel Maharjan',
     title: "Frontend Developer"
 }
@@ -11,8 +12,11 @@ function User(){
     return(
         <div className='user'>
             <div className='userTitle'>
-                <h1 className='userEdit'>Edit</h1>
-                <button className='userCreate'>Create </button>
+                <h1 className='userEdit'>Edit User</h1>
+                <Link to = "/newUser">
+                    <button className='userCreate'>Create </button>
+                </Link>
+                
             </div>
             <div className='userContainer'>
                 <div className='userShow'>
@@ -41,14 +45,44 @@ function User(){
                         <span className = "accountDetails">joelmaharjan23@gmail.com</span> 
                         </div>
                     </div>
-                    
-                        <div className='userInfo'>
-
-                        </div>
                     </div>
                 </div>
                 
-                <div className='userUpdate'>update</div>
+                <div className='userUpdate'>
+                    <h2 className='userUpdateTitle'>Update User </h2>
+                    <form className='userForm'>
+                        <div className='userUpdateItem'>
+                            <label>Full Name</label>
+                            <input type="text" placeholder = "Name" className="userInput"/>
+                        </div>
+                        <div className='userUpdateItem'>
+                            <label>Designation</label>
+                            <input type="text" placeholder = "Designation" className="userInput"/>
+                        </div>
+                        <div className='userUpdateItem'>
+                            <label>Username</label>
+                            <input type="text" placeholder = "Username" className="userInput"/>
+                        </div>
+                        <div className='userUpdateItem'>
+                            <label>Contact</label>
+                            <input type="text" placeholder = "Contact" className="userInput"/>
+                        </div>
+                        <div className='userUpdateItem'>
+                            <label>Address</label>
+                            <input type="text" placeholder = "Adress" className="userInput"/>
+                        </div>
+                        <div className='userUpdateItem'>
+                            <label>Email</label>
+                            <input type="text" placeholder = "Email" className="userInput"/>
+                        </div>
+                        <div className='userUpdateItem'>
+                            <input type="file" id='file'/>
+                        </div>  
+                            <button className='userUpdateBtn'>Update</button>
+                    </form>
+
+
+                </div>
             </div>
             
         </div>

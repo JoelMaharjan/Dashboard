@@ -2,11 +2,11 @@ import './userList.css';
 import { DataGrid } from '@mui/x-data-grid';
 import {DeleteOutline} from '@mui/icons-material';
 import { Link } from 'react-router-dom';
-import { rows } from '../../../data';
 import { useState } from 'react';
+import { userData } from '../../../UserData';
 
 function UserList(){
-    const[data, setData]=useState(rows)
+    const[data,setData]=useState(userData)
 
     const deleteHandler = (id) => {
         setData(data.filter((item) => item.id !== id));
@@ -14,23 +14,23 @@ function UserList(){
 
     const columns = [
         { field: 'id', headerName: 'ID', width: 70 },
-        { field: 'firstName', headerName: 'First name', width: 130 },
-        { field: 'lastName', headerName: 'Last name', width: 130 },
+        { field: 'firstName', headerName: 'First name', width: 100 },
+        { field: 'lastName', headerName: 'Last name', width: 100 },
         {
           field: 'age',
           headerName: 'Age',
           type: 'number',
-          width: 90,
+          width: 60,
         },
         {
           field: 'email',
           headerName: 'Email',
-          width: 160,
+          width: 220,
         },
         {
             field: 'designation',
             headerName: 'Designation',
-            width: 180,
+            width: 200,
         },
         {
         field: 'salary',
@@ -40,7 +40,8 @@ function UserList(){
         {
         field:'action',
         headerName: 'Action',
-        width:150,
+        width:100,
+        
         renderCell: (params) => {
             return(
                 <>
@@ -53,20 +54,21 @@ function UserList(){
         },
         },
     ];
-    
-
-
     return(
         <div className="userList">
-            <DataGrid
-                rows={data}
-                disableSelectionOnClick
-                columns={columns}
-                pageSize={8}
-                checkboxSelection
-            />
+            <div className='userHeading'>
+                <h2> User Lists</h2>
+                <input type= "text" placeholder='Search...' className='search'  />
+            </div>
+                <DataGrid 
+                    rows={data}
+                    disableSelectionOnClick
+                    columns={columns}
+                    pageSize={8}
+                    checkboxSelection
+                />
+
         </div>
-    )
-}
+    )}   
 
 export default UserList;

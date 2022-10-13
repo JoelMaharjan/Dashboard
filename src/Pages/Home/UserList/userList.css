@@ -15,3 +15,16 @@
 .btnDelete{
     cursor: pointer;
 }
+
+.userHeading{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    margin: 10px 15px;
+    width: 55%;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}

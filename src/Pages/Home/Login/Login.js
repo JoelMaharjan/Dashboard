@@ -11,7 +11,6 @@ function Login(props){
     const [formValue, setFormValue] = useState(initialValues);
     const [formError, setFormError] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
-    const users = [{username: "Joel", password : 'Maharjan123@'}]
 
 
     const handleChange = (e) =>{
@@ -70,11 +69,11 @@ function Login(props){
                     <button type="submit"  className="loginBtn" >
                         Log in
                     </button> 
-                    {Object.keys(formError).length === 0 && isSubmit ? ( <Navigate to={"/"}> </Navigate>) 
+                    {Object.keys(formError).length === 0 && isSubmit ? ( <Navigate to={"/dashboard"}> </Navigate>) 
                     :   (
-                         ( console.log('please enter full detail')
+                         ( <p></p>)
                        )                   
-                ) 
+                
                     }
             </form>
         </div>

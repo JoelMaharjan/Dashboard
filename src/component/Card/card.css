@@ -1,0 +1,26 @@
+.card{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding:20px;
+    width: 300px;
+    margin-left: 10px;
+}
+.cardImg{
+    width: 280px;
+    border-radius: 8px;
+}
+.stats{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.star{
+    height: 12px;
+}
+
+.gray{
+    color: gray;
+}
+
+.bold{
+    font-weight: bold;
+}

@@ -3,10 +3,10 @@ import './piechart.css';
 
 function PieCharts(){
     const data = [
-        { name: 'Group A', value: 400 },
-        { name: 'Group B', value: 100 },
-        { name: 'Group C', value: 300 },
-        { name: 'Group D', value: 200 },
+        { name: 'React', value: 60   },
+        { name: 'Java', value: 80 },
+        { name: 'Laravel', value: 42 },
+        { name: 'Python', value: 75 },
       ];
       
       const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
